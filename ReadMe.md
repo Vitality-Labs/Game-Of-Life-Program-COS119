@@ -1,8 +1,8 @@
-## Game-Of-Life-Program-COS119
+# Game-Of-Life-Program-COS119
 
-# Welcome to my version of "Game of Life". Here is a basic guide on how to use this application.
+### Welcome to my version of "Game of Life". Here is a basic guide on how to use this application.
 
-Toolbar:
+## Toolbar:
 
     - File Menu:
 		- Open File: Open a previously saved file.
@@ -26,7 +26,7 @@ Toolbar:
 		- Change Game Speed: Changes how fast the generations move.
 		- Change Game Size: Changes the size of the game board (Will clear the current game).
 
-Feature List:
+## Feature List:
 
 - Scaleable board or "universe".
 - Start, Pause, and Next game controls.
