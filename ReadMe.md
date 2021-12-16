@@ -3,7 +3,6 @@ Welcome to my version of "Game of Life". Here is a basic guide on how to use thi
 Toolbar:
 
     - File Menu:
-    
 		- Open File: Open a previously saved file.
 		- Save File: Save the current game state.
 		- Exit: Close the application.
