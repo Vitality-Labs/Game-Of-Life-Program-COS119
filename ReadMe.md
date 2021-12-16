@@ -4,15 +4,15 @@ Toolbar:
 
     - File Menu:
     
-	- Open File: Open a previously saved file.
-	- Save File: Save the current game state.
-	- Exit: Close the application.
+		- Open File: Open a previously saved file.
+		- Save File: Save the current game state.
+		- Exit: Close the application.
 	
     - View Menu:
     
-	- Grid: Toggles the border around each cell on/off.
-	- Alive Cell Color: Allows you to change the background color of the living cells.
-	- Stats: Toggles the state bar at the bottom of the screen.
+		- Grid: Toggles the border around each cell on/off.
+		- Alive Cell Color: Allows you to change the background color of the living cells.
+		- Stats: Toggles the state bar at the bottom of the screen.
 	
     - Game Menu:
     
@@ -29,6 +29,7 @@ Toolbar:
 	- Change Game Size: Changes the size of the game board (Will clear the current game).
 
 Feature List:
+
 - Scaleable board or "universe".
 - Start, Pause, and Next game controls.
 - Randomization with and without game seeds.
