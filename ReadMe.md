@@ -1,6 +1,6 @@
-##Game-Of-Life-Program-COS119
+## Game-Of-Life-Program-COS119
 
-Welcome to my version of "Game of Life". Here is a basic guide on how to use this application.
+# Welcome to my version of "Game of Life". Here is a basic guide on how to use this application.
 
 Toolbar:
 
