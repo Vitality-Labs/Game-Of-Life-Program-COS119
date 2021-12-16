@@ -16,17 +16,17 @@ Toolbar:
 	
     - Game Menu:
     
-	- Start: Starts the game.
-	- Pause: Pauses the game.
-	- Next: Moves the game to the next generation.
-	- Clear: Clears the game board.
-	- Randomize: Randomizes the boards start position.
-	- Randomize With Seed: Randomizes the boards start position with a repeatable seed.
+		- Start: Starts the game.
+		- Pause: Pauses the game.
+		- Next: Moves the game to the next generation.
+		- Clear: Clears the game board.
+		- Randomize: Randomizes the boards start position.
+		- Randomize With Seed: Randomizes the boards start position with a repeatable seed.
 	
     - Settings Menu:
     
-	- Change Game Speed: Changes how fast the generations move.
-	- Change Game Size: Changes the size of the game board (Will clear the current game).
+		- Change Game Speed: Changes how fast the generations move.
+		- Change Game Size: Changes the size of the game board (Will clear the current game).
 
 Feature List:
 
