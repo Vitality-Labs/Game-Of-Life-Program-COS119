@@ -1,7 +1,6 @@
 Welcome to my version of "Game of Life". Here is a basic guide on how to use this application.
 
 Toolbar:
-
     - File Menu:
 		- Open File: Open a previously saved file.
 		- Save File: Save the current game state.
