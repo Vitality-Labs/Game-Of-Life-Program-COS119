@@ -51,6 +51,7 @@ namespace Game_Of_Life_Program_COS119 {
             this.nextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.randomizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.randomizeWithSeedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changeGameSpeedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changeGameSizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -156,7 +157,7 @@ namespace Game_Of_Life_Program_COS119 {
             this.showGridToolStripMenuItem.Checked = true;
             this.showGridToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.showGridToolStripMenuItem.Name = "showGridToolStripMenuItem";
-            this.showGridToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.showGridToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.showGridToolStripMenuItem.Text = "Grid";
             this.showGridToolStripMenuItem.Click += new System.EventHandler(this.showGridToolStripMenuItem_Click);
             // 
@@ -169,7 +170,7 @@ namespace Game_Of_Life_Program_COS119 {
             this.blackToolStripMenuItem,
             this.purpleToolStripMenuItem});
             this.aliveCellColorToolStripMenuItem.Name = "aliveCellColorToolStripMenuItem";
-            this.aliveCellColorToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.aliveCellColorToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.aliveCellColorToolStripMenuItem.Text = "Alive Cell Color";
             // 
             // redToolStripMenuItem
@@ -214,7 +215,7 @@ namespace Game_Of_Life_Program_COS119 {
             this.showStatsToolStripMenuItem.Checked = true;
             this.showStatsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.showStatsToolStripMenuItem.Name = "showStatsToolStripMenuItem";
-            this.showStatsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.showStatsToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.showStatsToolStripMenuItem.Text = "Stats";
             this.showStatsToolStripMenuItem.Click += new System.EventHandler(this.showStatsToolStripMenuItem_Click);
             // 
@@ -234,7 +235,8 @@ namespace Game_Of_Life_Program_COS119 {
             this.pauseToolStripMenuItem,
             this.nextToolStripMenuItem,
             this.clearToolStripMenuItem,
-            this.randomizeToolStripMenuItem});
+            this.randomizeToolStripMenuItem,
+            this.randomizeWithSeedToolStripMenuItem});
             this.controlsToolStripMenuItem.Name = "controlsToolStripMenuItem";
             this.controlsToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.controlsToolStripMenuItem.Text = "Game";
@@ -242,37 +244,44 @@ namespace Game_Of_Life_Program_COS119 {
             // startToolStripMenuItem
             // 
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.startToolStripMenuItem.Text = "Start";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
             // 
             // pauseToolStripMenuItem
             // 
             this.pauseToolStripMenuItem.Name = "pauseToolStripMenuItem";
-            this.pauseToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.pauseToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.pauseToolStripMenuItem.Text = "Pause";
             this.pauseToolStripMenuItem.Click += new System.EventHandler(this.pauseToolStripMenuItem_Click);
             // 
             // nextToolStripMenuItem
             // 
             this.nextToolStripMenuItem.Name = "nextToolStripMenuItem";
-            this.nextToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.nextToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.nextToolStripMenuItem.Text = "Next";
             this.nextToolStripMenuItem.Click += new System.EventHandler(this.nextToolStripMenuItem_Click);
             // 
             // clearToolStripMenuItem
             // 
             this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.clearToolStripMenuItem.Text = "Clear";
             this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
             // 
             // randomizeToolStripMenuItem
             // 
             this.randomizeToolStripMenuItem.Name = "randomizeToolStripMenuItem";
-            this.randomizeToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.randomizeToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.randomizeToolStripMenuItem.Text = "Randomize";
             this.randomizeToolStripMenuItem.Click += new System.EventHandler(this.randomizeToolStripMenuItem_Click);
+            // 
+            // randomizeWithSeedToolStripMenuItem
+            // 
+            this.randomizeWithSeedToolStripMenuItem.Name = "randomizeWithSeedToolStripMenuItem";
+            this.randomizeWithSeedToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.randomizeWithSeedToolStripMenuItem.Text = "Randomize With Seed...";
+            this.randomizeWithSeedToolStripMenuItem.Click += new System.EventHandler(this.randomizeWithSeedToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
@@ -286,15 +295,15 @@ namespace Game_Of_Life_Program_COS119 {
             // changeGameSpeedToolStripMenuItem
             // 
             this.changeGameSpeedToolStripMenuItem.Name = "changeGameSpeedToolStripMenuItem";
-            this.changeGameSpeedToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.changeGameSpeedToolStripMenuItem.Text = "Change Game Speed";
+            this.changeGameSpeedToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.changeGameSpeedToolStripMenuItem.Text = "Change Game Speed...";
             this.changeGameSpeedToolStripMenuItem.Click += new System.EventHandler(this.changeGameSpeedToolStripMenuItem_Click);
             // 
             // changeGameSizeToolStripMenuItem
             // 
             this.changeGameSizeToolStripMenuItem.Name = "changeGameSizeToolStripMenuItem";
-            this.changeGameSizeToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.changeGameSizeToolStripMenuItem.Text = "Change Game Size";
+            this.changeGameSizeToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.changeGameSizeToolStripMenuItem.Text = "Change Game Size...";
             this.changeGameSizeToolStripMenuItem.Click += new System.EventHandler(this.changeGameSizeToolStripMenuItem_Click);
             // 
             // toolStripSeparator
@@ -675,6 +684,7 @@ namespace Game_Of_Life_Program_COS119 {
         private System.Windows.Forms.ToolStripMenuItem purpleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showStatsToolStripMenuItem;
         private ToolStripMenuItem showNumbersInCellsToolStripMenuItem;
+        private ToolStripMenuItem randomizeWithSeedToolStripMenuItem;
     }
 
     // pauseToolStripMenuItem nextToolStripMenuItem

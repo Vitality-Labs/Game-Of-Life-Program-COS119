@@ -105,6 +105,29 @@ namespace Game_Of_Life_Program_COS119 {
             graphicsPanel1.Invalidate();
         }
 
+        public void randomizeWithSeed() {
+            clear();
+            int seed = ShowDialogInt(
+                "Enter a seed for game generation: ",
+                "Change Game Seed", 0);
+            Random rand = new Random(seed);
+            for (int i = 0; i < universe.GetLength(1); i++) {
+                for (int x = 0; x < universe.GetLength(0); x++) {
+                    bool currCellState = false;
+                    if (rand.NextDouble() >= 0.5) {
+                        currCellState = true;
+                    } else {
+                        currCellState = false;
+                    }
+                    universe[i, x] = currCellState;
+                }
+            }
+            toolStripStatusLabelGenerations.Text = "Generation: " + generations.ToString() +
+                "    |    Cells Alive: " + CountTotalAliveCells().ToString() +
+                "    |    Universe Size: " + (this.universeSize * this.universeSize);
+            graphicsPanel1.Invalidate();
+        }
+
         // Calculate the next generation of cells
         private void NextGeneration() {
             // Increment generation count
@@ -372,6 +395,10 @@ namespace Game_Of_Life_Program_COS119 {
             prompt.Controls.Add(inputBox);
             prompt.ShowDialog();
             return (int)inputBox.Value;
+        }
+
+        private void randomizeWithSeedToolStripMenuItem_Click(object sender, EventArgs e) {
+            this.randomizeWithSeed();
         }
     }
 }
